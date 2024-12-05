@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="2dp"
+	tools:context=".Message.SendImage">
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="400dp"
+		android:scaleType="centerCrop"
+		android:layout_marginTop="70dp"
+		android:id="@+id/iv_sendimage"
+		android:background="@color/new_color"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Send Image"
+		android:background="@drawable/rounded_button"
+		android:textColor="@color/black"
+		android:textSize="20sp"
+		android:textAllCaps="false"
+		android:layout_margin="10dp"
+		android:id="@+id/btn_send"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="please wait while uploading file"
+		android:id="@+id/tv_dont"
+		android:layout_gravity="center"
+		android:textColor="@color/black"
+		android:visibility="invisible"/>
+	<ProgressBar
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:id="@+id/pb_sendImage"
+		android:visibility="invisible"/>
+
+</LinearLayout>

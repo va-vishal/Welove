@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <queries>
+        <package android:name="com.google.android.apps.nbu.paisa.user" />
+    </queries>
+
+    <application
+        android:name=".Welove"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ZegoPrebuiltCallOffline"
+        tools:targetApi="31" >
+        <activity
+            android:name=".Authentication.DOBActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Hot_Subscription_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.LoginOrRegister"
+            android:exported="false" />
+        <activity
+            android:name=".RefundAndCancelation"
+            android:exported="true" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.LikedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SendRequestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.PaymentRequestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".xx"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.WalletActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SubscriptionActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2676604629524489~6702307669" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@xml/gma_ad_services_config"
+            tools:replace="android:resource" />
+
+        <activity
+            android:name=".Calls.VideoCallOutgoing"
+            android:exported="true" />
+        <activity
+            android:name=".Calls.VideoCallinComing"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.VisitsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.LikeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.FullScreenImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Message.SendImage"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.EmailRegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Message.MessageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Message.messagingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HelpCenter.DeleteAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.LoginActivity1"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.SafetyTipsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.HelpCenterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.AboutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.RecentPassesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.PreferenceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.EditImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.DOBActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PrivacyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TermsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Authentication.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"
+            tools:ignore="MissingClass" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="Notification" />
+
+        <service
+            android:name=".FCM.MessageService"
+            android:exported="true"
+            android:foregroundServiceType="mediaPlayback|dataSync"
+            android:permission="android.permission.FOREGROUND_SERVICE" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

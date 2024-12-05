@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/root_view"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Message.messagingActivity">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+			<RelativeLayout
+				android:id="@+id/layout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="51dp"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:layout_marginEnd="0dp">
+
+					<TextView
+						android:id="@+id/username"
+						android:layout_width="172dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="5dp"
+						android:layout_toEndOf="@+id/profile_image"
+						android:text="Username"
+						android:textColor="@android:color/black"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/online"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/username"
+						android:layout_marginStart="5dp"
+						android:layout_marginTop="1dp"
+						android:layout_toEndOf="@+id/profile_image"
+						android:text="Online"
+						android:textColor="#28952C"
+						android:textSize="13sp" />
+
+					<TextView
+						android:id="@+id/lastSeen"
+						android:layout_width="171dp"
+						android:layout_height="22dp"
+						android:layout_below="@+id/username"
+						android:layout_marginStart="05dp"
+						android:layout_marginTop="2dp"
+						android:layout_toEndOf="@+id/profile_image"
+						android:text="Last Seen"
+						android:textColor="#28952C"
+						android:textSize="13sp" />
+
+					<de.hdodenhof.circleimageview.CircleImageView
+						android:id="@+id/profile_image"
+						android:layout_width="46dp"
+						android:layout_height="46dp"
+						android:layout_marginStart="04dp"
+						android:layout_marginTop="3dp"
+						android:background="@drawable/circle_border"
+						android:src="@drawable/kajol"
+						app:civ_border_color="@color/white"
+						app:civ_border_width="2dp" />
+
+					<View
+						android:id="@+id/img_onn"
+						android:layout_width="49dp"
+						android:layout_height="49dp"
+						android:layout_alignParentStart="true"
+						android:layout_marginStart="2.7dp"
+						android:layout_marginTop="1.5dp"
+						android:background="@drawable/circle_border1"
+						android:visibility="gone" />
+				</RelativeLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:layout_marginEnd="0dp"
+					android:orientation="horizontal">
+
+
+					<com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+						android:id="@+id/voice"
+						android:layout_width="48dp"
+						android:layout_height="48dp"
+						android:background="@drawable/call" />
+					<com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+						android:id="@+id/video"
+						android:layout_width="48dp"
+						android:layout_height="48dp"
+						android:background="@drawable/video" />
+
+					<ImageButton
+						android:id="@+id/more"
+						android:layout_width="36dp"
+						android:layout_height="36dp"
+						android:layout_alignParentEnd="true"
+						android:layout_margin="10dp"
+						android:background="@color/white"
+						android:contentDescription="@string/more_icon_description"
+						android:src="@drawable/ic_more"
+						android:visibility="visible" />
+				</LinearLayout>
+			</RelativeLayout>
+
+		</androidx.appcompat.widget.Toolbar>
+			</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recycler_view_c"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+		app:layout_constraintBottom_toTopOf="@id/msgData"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:visibility="visible" />
+
+
+	<com.airbnb.lottie.LottieAnimationView
+		android:id="@+id/animation_view"
+		android:layout_width="114dp"
+		android:layout_height="100dp"
+		android:layout_marginStart="-20dp"
+		android:layout_marginBottom="-40dp"
+		app:layout_constraintBottom_toTopOf="@+id/msgData"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.069"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+		app:layout_constraintVertical_bias="0.979"
+		app:lottie_autoPlay="true"
+		app:lottie_fileName="animation.json"
+		app:lottie_loop="true"
+		tools:ignore="MissingConstraints" />
+
+	<TextView
+		android:id="@+id/blockedText"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|center_vertical"
+		android:text="You have blocked this user. You can't send or receive messages from blocked users."
+		android:textColor="@color/black"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:visibility="gone"
+		app:layout_constraintBottom_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent" />
+
+	<LinearLayout
+		android:id="@+id/msgData"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:visibility="visible"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:padding="8dp">
+
+		<EditText
+			android:id="@+id/send_msg"
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:layout_weight="1"
+			android:background="@drawable/edittext_b"
+			android:drawableLeft="@drawable/plu"
+			android:drawableRight="@drawable/send"
+			android:drawablePadding="05dp"
+			android:hint="Type a message"
+			android:inputType="textMultiLine"
+			android:padding="05dp"
+			android:paddingStart="15dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:singleLine="false"
+			android:paddingEnd="15dp"
+			android:visibility="visible" />
+	</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

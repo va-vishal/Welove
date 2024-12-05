@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<!-- Background gradient for the card -->
+		<shape android:shape="rectangle">
+			<gradient
+				android:startColor="#FFFFFF"
+				android:endColor="#E0E0E0"
+				android:angle="45" />
+			<corners android:radius="30dp" />
+		</shape>
+	</item>
+	<item android:right="5dp" android:bottom="5dp">
+		<!-- Shadow color for 3D effect -->
+		<shape android:shape="rectangle">
+			<solid android:color="#B0B0B0" />
+			<corners android:radius="30dp" />
+		</shape>
+	</item>
+</layer-list>

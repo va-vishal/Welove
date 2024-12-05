@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Fragments.NotificationFragment">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<androidx.appcompat.widget.Toolbar
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:id="@+id/toolbar"
+			android:background="@color/white"
+			android:contentInsetStart="0dp"
+			android:contentInsetEnd="0dp">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Notifications"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="@android:color/black"
+					android:paddingStart="16dp" />
+
+				<ImageView
+					android:id="@+id/deletenotification"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_alignParentEnd="true"
+					android:layout_marginEnd="25dp"
+					android:src="@drawable/trash" />
+
+			</RelativeLayout>
+
+		</androidx.appcompat.widget.Toolbar>
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recycle_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="?attr/actionBarSize"
+		android:padding="16dp"
+		android:clipToPadding="false"
+		android:scrollbars="vertical"
+		android:visibility="gone"/>
+	<TextView
+		android:id="@+id/notificationtxt"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:text="No notifications yet !"
+		android:textSize="18sp"
+		android:textColor="@color/black"
+		android:textStyle="bold"/>
+
+</FrameLayout>

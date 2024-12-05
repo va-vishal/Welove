@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bottom_navigation_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<solid android:color="@color/white" /> <!-- background color -->
+	<corners android:topLeftRadius="50dp" android:topRightRadius="50dp" /> <!-- adjust radius as needed -->
+</shape>

@@ -1,0 +1,326 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:cardBackgroundColor="@color/white"
+	app:cardCornerRadius="30dp"
+	app:cardElevation="4dp"
+	app:cardUseCompatPadding="true">
+
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:visibility="visible">
+
+		<ViewFlipper
+			android:id="@+id/viewFlipper"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:autoStart="true"
+			android:flipInterval="3000"
+			android:inAnimation="@anim/slide_in_right"
+			android:outAnimation="@anim/slide_out_left">
+
+			<ImageView
+				android:id="@+id/image11"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"
+				android:visibility="gone" />
+
+			<ImageView
+				android:id="@+id/image22"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"
+				android:visibility="gone" />
+
+			<ImageView
+				android:id="@+id/image33"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"
+				android:visibility="gone" />
+
+			<ImageView
+				android:id="@+id/image44"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"
+				android:visibility="gone" />
+
+			<ImageView
+				android:id="@+id/image55"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"
+				android:visibility="gone" />
+
+			<ImageView
+				android:id="@+id/image66"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"
+				android:visibility="gone" />
+
+		</ViewFlipper>
+
+		<RelativeLayout
+			android:id="@+id/pub"
+			android:layout_width="match_parent"
+			android:layout_height="101dp"
+			android:layout_alignBottom="@+id/viewFlipper"
+			android:layout_alignParentStart="true"
+			android:layout_gravity="bottom"
+			android:layout_marginStart="0dp"
+			android:layout_marginBottom="10dp"
+			android:padding="8dp">
+
+			<TextView
+				android:id="@+id/username"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentTop="true"
+				android:layout_marginStart="10dp"
+				android:maxWidth="150dp"
+				android:minWidth="20dp"
+				android:shadowColor="@color/black"
+				android:fontFamily="@font/"
+				android:shadowDx="1"
+				android:shadowDy="1"
+				android:maxLines="2"
+				android:shadowRadius="1"
+				android:text="Vishal"
+				android:textColor="@color/white"
+				android:textSize="22sp"
+				android:textStyle="bold"
+				android:visibility="visible" />
+
+			<TextView
+				android:id="@+id/age"
+				android:layout_width="wrap_content"
+				android:layout_height="25dp"
+				android:layout_alignParentTop="true"
+				android:layout_marginStart="1dp"
+				android:layout_marginTop="2dp"
+				android:layout_toEndOf="@+id/username"
+				android:background="@drawable/age_border"
+				android:fontFamily="serif-monospace"
+				android:gravity="center|center_horizontal"
+				android:paddingHorizontal="02dp"
+				android:shadowColor="@color/black"
+				android:shadowDy="1"
+				android:shadowRadius="1"
+				android:text="age"
+				android:textColor="@color/white"
+				android:textSize="16sp"
+				android:textStyle="normal|bold"
+				android:visibility="visible" />
+
+
+			<ImageView
+				android:id="@+id/online_status"
+				android:layout_width="15dp"
+				android:layout_height="15dp"
+				android:layout_marginStart="2dp"
+				android:layout_toEndOf="@+id/age"
+				android:src="@drawable/ic_circle"
+				android:visibility="visible"
+				tools:ignore="ContentDescription" />
+
+			<ImageView
+				android:id="@+id/offline_status"
+				android:layout_width="15dp"
+				android:layout_height="15dp"
+				android:layout_marginStart="02dp"
+				android:layout_toEndOf="@+id/age"
+				android:src="@drawable/ic_circle1"
+				android:visibility="visible"
+				tools:ignore="ContentDescription" />
+
+			<TextView
+				android:id="@+id/job"
+				android:layout_width="wrap_content"
+				android:layout_height="23dp"
+				android:layout_below="@+id/username"
+				android:layout_alignParentStart="true"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="4dp"
+				android:padding="02dp"
+				android:shadowColor="@color/black"
+				android:shadowDx="1"
+				android:shadowDy="1"
+				android:shadowRadius="1"
+				android:text="job"
+				android:textColor="@color/white"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:visibility="visible" />
+
+			<TextView
+				android:id="@+id/state"
+				android:layout_width="wrap_content"
+				android:layout_height="23dp"
+				android:layout_below="@+id/username"
+				android:layout_marginStart="2dp"
+				android:layout_marginTop="4dp"
+				android:layout_toEndOf="@+id/job"
+				android:padding="02dp"
+				android:shadowColor="@color/black"
+				android:shadowDx="1"
+				android:shadowDy="1"
+				android:shadowRadius="1"
+				android:text="state"
+				android:textColor="@color/white"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:visibility="visible" />
+
+		</RelativeLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/pub"
+			android:layout_alignParentEnd="true"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="10dp"
+			android:background="@android:color/transparent"
+			android:foregroundGravity="center_vertical"
+			android:orientation="vertical"
+			android:padding="05dp">
+
+
+			<com.google.android.material.floatingactionbutton.FloatingActionButton
+				android:id="@+id/dislike_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/fab_border"
+				android:backgroundTint="@color/white"
+				app:backgroundTint="@color/lightblue"
+				app:borderWidth="3dp"
+				app:fabSize="normal"
+				app:srcCompat="@drawable/dislike" />
+
+			<com.google.android.material.floatingactionbutton.FloatingActionButton
+				android:id="@+id/like_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="03dp"
+				android:background="@drawable/fab_border"
+				android:backgroundTint="@color/white"
+				app:backgroundTint="@color/lightblue"
+				app:borderWidth="3dp"
+				app:fabSize="normal"
+				app:srcCompat="@drawable/heart" />
+
+			<com.google.android.material.floatingactionbutton.FloatingActionButton
+				android:id="@+id/profileview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="03dp"
+				android:background="@drawable/fab_border"
+				android:backgroundTint="@color/white"
+				app:backgroundTint="@color/lightblue"
+				app:borderWidth="3dp"
+				app:fabSize="normal"
+				app:srcCompat="@drawable/info" />
+
+			<com.google.android.material.floatingactionbutton.FloatingActionButton
+				android:id="@+id/message"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="03dp"
+				android:background="@drawable/fab_border"
+				android:backgroundTint="@color/white"
+				app:backgroundTint="@color/lightblue"
+				app:borderWidth="3dp"
+				app:fabSize="normal"
+				app:srcCompat="@drawable/messenger" />
+		</LinearLayout>
+
+		<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:cardview="http://schemas.android.com/apk/res-auto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="24dp"
+			cardview:cardBackgroundColor="@color/lightblue"
+			cardview:cardCornerRadius="10dp"
+			cardview:cardElevation="4dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="04dp"
+				android:orientation="horizontal"
+				android:padding="4dp">
+
+				<ImageView
+					android:layout_width="25dp"
+					android:layout_height="30dp"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentBottom="true"
+					android:layout_marginStart="02dp"
+					android:src="@drawable/ic_location" />
+
+				<TextView
+					android:id="@+id/kmtext"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginStart="02dp"
+					android:layout_marginEnd="02dp"
+					android:text="10 km"
+					android:textColor="@android:color/black"
+					android:textSize="14sp" />
+
+				<ImageView
+					android:id="@+id/premimage"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentBottom="true"
+					android:src="@drawable/premium"
+					android:visibility="visible"
+					tools:ignore="ContentDescription" />
+
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+
+		<ImageView
+			android:id="@+id/dislike_logo"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_above="@+id/pub"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="150dp"
+			android:layout_marginTop="150dp"
+			android:layout_marginEnd="150dp"
+			android:layout_marginBottom="350dp"
+			android:src="@drawable/disliked"
+			android:visibility="gone" />
+
+		<ImageView
+			android:id="@+id/like_logo"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_above="@+id/pub"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="150dp"
+			android:layout_marginTop="150dp"
+			android:layout_marginEnd="150dp"
+			android:layout_marginBottom="350dp"
+			android:src="@drawable/liked"
+			android:visibility="gone" />
+	</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

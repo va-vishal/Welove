@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Fragments.AllFragment">
+
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recycler_view_all"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone" />
+
+
+	<ImageView
+		android:id="@+id/messageimage"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_above="@+id/nomessagestxt"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentEnd="true"
+		android:visibility="gone"
+		android:layout_marginHorizontal="100dp"
+		android:layout_marginBottom="10dp"
+		android:src="@drawable/messenger" />
+
+	<TextView
+		android:id="@+id/nomessagestxt"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="331dp"
+		android:layout_marginHorizontal="10dp"
+		android:gravity="center"
+		android:visibility="gone"
+		android:text="No Chats Avalaible get premium or find a Connections to start a chat! "
+		android:textColor="@color/black"
+		android:textSize="18sp"
+		android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".HelpCenter.DeleteAccountActivity">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="@color/gnt_red"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:navigationIcon="@drawable/ic_back"
+			app:title="Delete Account"
+			app:titleTextColor="@color/white"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			app:titleTextAppearance="@style/ToolbarTitleStyle" />
+
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:orientation="vertical"
+		app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+		app:layout_constraintBottom_toBottomOf="parent"
+		android:background="@drawable/background_gradient">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="05dp"
+				android:text="if a user delets's their account:"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#EF1616"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="start"
+				android:layout_marginTop="05dp"
+				android:text="* Their profile wiil be removed from the list of profiles on WeLove"
+				android:textSize="14sp"
+				android:textColor="#000000"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="start"
+				android:layout_marginTop="05dp"
+				android:text="* The user cannot reactivate their deleted profile"
+				android:textSize="14sp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="05dp"
+				android:gravity="start"
+				android:text="* User have to create anew account and subscriptions and \n    all are not retrieved. "
+				android:textColor="#000000"
+				android:textSize="14sp" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="05dp"
+				android:gravity="start"
+				android:text="* User have to create anew account and subscriptions and \n    all are not retrieved. "
+				android:textColor="#000000"
+				android:textSize="14sp" />
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/logoutCard"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="80dp"
+				app:cardCornerRadius="30dp"
+				app:cardElevation="4dp"
+				android:padding="8dp">
+
+			<Button
+				android:id="@+id/deletebutton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:background="@drawable/allbackgroundbuttons"
+				android:padding="10dp"
+				android:textAllCaps="false"
+				android:backgroundTint="#F40B0B"
+				android:text="Delete Account"
+				android:textColor="@color/white" />
+				<Button
+					android:id="@+id/cancelbutton"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:background="@drawable/allbackgroundbuttons"
+					android:padding="10dp"
+					android:visibility="gone"
+					android:textAllCaps="false"
+					android:backgroundTint="#AFE07B"
+					android:text="Cancel Deletion"
+					android:textColor="@color/black" />
+			</androidx.cardview.widget.CardView>
+		</LinearLayout>
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

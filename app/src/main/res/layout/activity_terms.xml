@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".TermsActivity">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="@android:color/transparent"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:navigationIcon="@drawable/ic_back"
+			app:title="Terms &amp; Conditions"
+			app:titleTextColor="@color/black"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			app:titleTextAppearance="@style/ToolbarTitleStyle" />
+
+
+	</com.google.android.material.appbar.AppBarLayout>
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:orientation="vertical"
+		app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+		app:layout_constraintBottom_toBottomOf="parent"
+		android:background="@drawable/background_gradient">
+
+		<LinearLayout
+			android:padding="05dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Terms"
+				android:gravity="center"
+				android:textSize="25sp"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"
+				 />
+	<TextView
+		android:id="@+id/termsTextView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Terms"
+		android:layout_marginStart="15dp"
+		android:layout_marginEnd="15dp"
+		android:textColor="#0D0000"
+		android:textSize="15sp" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Eligibility"
+			android:textSize="25sp"
+			android:gravity="center"
+
+			android:textStyle="bold|normal"
+			android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Registration&amp;Your Account"
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="MemberShip"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Purchaes"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Payment terms"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Debit/Credit Card Transactions"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Refunds"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Your Information&amp;Content"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Restrictions on information&amp;content"
+
+				android:textSize="23sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Cheating"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="License"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView11"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Risks&amp;Precautions"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView12"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+
+				android:text="Modifying the Services"
+				android:textColor="#0D0000"
+				android:textSize="25sp"
+				android:textStyle="bold|normal" />
+
+			<TextView
+				android:id="@+id/termsTextView13"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Governing Law"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView14"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Deletion of Account"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView15"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Copyright Infringement"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView16"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Reporting disputis and other issues"
+
+				android:textSize="25sp"
+				android:gravity="center"
+				android:textStyle="bold|normal"
+				android:textColor="#0D0000"/>
+			<TextView
+				android:id="@+id/termsTextView17"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Terms"
+				android:textColor="#0D0000"
+				android:textSize="15sp"
+				android:layout_marginBottom="70dp"
+				android:layout_marginStart="15dp"
+				android:layout_marginEnd="15dp"/>
+
+
+		</LinearLayout>
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

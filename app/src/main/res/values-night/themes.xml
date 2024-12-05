@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<style name="Base.Theme.WeLove" parent="Theme.Design.Light.NoActionBar">
+		<!-- Base theme for night mode can inherit from a dark theme variant if needed -->
+	</style>
+
+	<style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+		<!-- Customize your night theme here -->
+		<item name="colorPrimary">@color/primary_night</item>
+		<item name="colorPrimaryDark">@color/primaryDark_night</item>
+		<item name="colorAccent">@color/accent_night</item>
+		<item name="colorSurface">@color/surface_night</item>
+		<item name="colorOnBackground">@color/onBackground_night</item>
+	</style>
+
+	<style name="Theme.ZegoUIKi" parent="Base.Theme.WeLove">
+		<!-- Night mode colors -->
+		<item name="colorPrimary">@color/purple_500_night</item>
+		<item name="android:statusBarColor">@color/statusBarColorNight</item>
+		<item name="colorPrimaryVariant">@color/purple_700_night</item>
+		<item name="colorOnPrimary">@color/white</item>
+		<item name="colorSecondary">@color/teal_200_night</item>
+		<item name="colorSecondaryVariant">@color/teal_700_night</item>
+		<item name="colorOnSecondary">@color/black</item>
+		<item name="android:navigationBarColor">@color/black</item>
+		<item name="colorOnBackground">@color/white</item>
+		<item name="badgeStyle">@style/BadgeStyle</item> <!-- Ensure badge style is consistent -->
+	</style>
+
+	<style name="BadgeStyle" parent="Widget.MaterialComponents.Badge">
+		<item name="backgroundColor">@color/new_color_night</item> <!-- Dark background color for badges -->
+		<item name="badgeTextColor">@color/white</item>
+		<item name="badgeTextAppearance">@style/BadgeTextAppearance</item>
+	</style>
+
+	<style name="BadgeTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">12sp</item> <!-- Same text size -->
+	</style>
+</resources>

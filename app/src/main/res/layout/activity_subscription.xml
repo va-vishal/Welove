@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SubscriptionActivity">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="@android:color/transparent"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:navigationIcon="@drawable/ic_back"
+			app:title="WeLove"
+			app:titleTextColor="@color/black"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			app:titleTextAppearance="@style/ToolbarTitleStyle" />
+		<!-- Search bar container -->
+
+		<LinearLayout
+			android:id="@+id/profilelayout"
+			android:layout_width="match_parent"
+			android:layout_height="72dp"
+			android:background="@color/white"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:paddingBottom="5dp">
+
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/userpic"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:layout_marginStart="5dp"
+				android:src="@drawable/defaultimage"
+				app:civ_border_color="@color/lightblue"
+				app:civ_border_overlay="true"
+				app:civ_border_width="2.2dp" />
+
+			<TextView
+				android:id="@+id/username"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginEnd="5dp"
+				android:layout_weight="1"
+				android:text="Hello User, become a premium member and enjoy the benefits below."
+				android:textColor="@color/black"
+				android:textSize="14sp" />
+
+			<ImageView
+				android:id="@+id/infoo"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginEnd="5dp"
+				android:src="@drawable/info"/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/marqueeTextView2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/white"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:padding="16dp"
+			android:scrollHorizontally="true"
+			android:singleLine="true"
+			android:text=""
+			android:textColor="@android:color/black"
+			android:textSize="18sp"
+			android:visibility="visible" />
+
+		<LinearLayout
+			android:id="@+id/btns"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:padding="4dp"
+			android:elevation="2dp"
+			android:visibility="visible"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="3dp">
+
+			<Button
+				android:id="@+id/pw"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginEnd="8dp"
+				android:paddingVertical="05dp"
+				android:background="@drawable/subbuttons"
+				android:text="PW"
+				android:textColor="@color/tab_text_unselected"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/pm"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginEnd="8dp"
+				android:paddingVertical="05dp"
+				android:background="@drawable/subbuttons"
+				android:text="PM"
+				android:textColor="@color/tab_text_unselected"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/p3m"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginEnd="8dp"
+				android:paddingVertical="05dp"
+				android:background="@drawable/subbuttons"
+				android:text="P3M"
+				android:textColor="@color/tab_text_unselected"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/ppw"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginEnd="8dp"
+				android:paddingVertical="05dp"
+				android:background="@drawable/subbuttons"
+				android:text="PPW"
+				android:textColor="@color/tab_text_unselected"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/ppm"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginEnd="8dp"
+				android:paddingVertical="05dp"
+				android:background="@drawable/subbuttons"
+				android:text="PPM"
+				android:textColor="@color/tab_text_unselected"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/pp3m"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginEnd="8dp"
+				android:paddingVertical="05dp"
+				android:background="@drawable/subbuttons"
+				android:text="PP3M"
+				android:textColor="@color/tab_text_unselected"
+				android:textStyle="bold" />
+
+		</LinearLayout>
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/subscriptionRecyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		android:fadeScrollbars="false"
+		android:orientation="horizontal"
+		android:scrollbarStyle="insideOverlay"
+		android:scrollbars="horizontal"
+		app:layout_constraintBottom_toTopOf="@+id/btn_sub"
+		app:layout_constraintTop_toBottomOf="@id/appBarLayout2"
+		app:layout_constraintVertical_bias="0.0"
+		tools:layout_editor_absoluteX="-16dp" />
+
+	<Button
+		android:id="@+id/btn_sub"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp"
+		android:layout_marginHorizontal="15dp"
+		android:text="Subscribe Now"
+		android:textStyle="bold"
+		android:textSize="16sp"
+		android:backgroundTint="@color/primary"
+		android:background="@drawable/allbackgroundbuttons"
+		android:textColor="@color/white"
+		app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

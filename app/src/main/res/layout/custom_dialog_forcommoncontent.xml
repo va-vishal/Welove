@@ -1,0 +1,63 @@
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	app:cardCornerRadius="35dp"
+	app:cardElevation="10dp"
+	android:background="@android:color/transparent">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="24dp"
+android:background="@drawable/background_gradient">  <!-- Gradient background -->
+
+<TextView
+	android:id="@+id/dialog_title"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Exit Confirmation"
+	android:textSize="20sp"
+	android:layout_gravity="center"
+	android:textColor="@color/black"
+	android:textStyle="bold"
+	android:paddingBottom="16dp"/>
+
+<TextView
+	android:id="@+id/dialog_message"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Are you sure you want to exit the App?"
+	android:layout_gravity="center"
+	android:textColor="@color/black"
+	android:textSize="16sp"/>
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:layout_marginTop="24dp">
+
+	<Button
+		android:id="@+id/btn_no"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="No"
+		android:layout_marginEnd="5dp"
+		android:backgroundTint="#EB4E4E"
+		android:background="@drawable/allbackgroundbuttons"
+		android:layout_marginRight="8dp"/>
+
+	<Button
+		android:id="@+id/btn_yes"
+		android:background="@drawable/allbackgroundbuttons"
+		android:layout_width="wrap_content"
+		android:backgroundTint="#96F29A"
+		android:layout_height="wrap_content"
+		android:text="Yes"/>
+</LinearLayout>
+</LinearLayout>
+	</androidx.cardview.widget.CardView>

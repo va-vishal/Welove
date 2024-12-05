@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/background_gradient"
+	android:orientation="vertical"
+	android:padding="16dp"
+	tools:context=".Authentication.LoginActivity1">
+
+	<!-- Title Text -->
+	<TextView
+		android:id="@+id/text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="100dp"
+		android:gravity="center"
+		android:text="WeLove"
+		android:textColor="@color/black"
+		android:textSize="30sp"
+		android:textStyle="bold" />
+
+	<!-- Subtitle Text -->
+	<TextView
+		android:id="@+id/text1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:gravity="center"
+		android:text="Connect with people near you"
+		android:textColor="@color/black"
+		android:textSize="18sp" />
+
+	<!-- Email Input Card -->
+	<androidx.cardview.widget.CardView
+		android:id="@+id/identifiercard"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+		android:layout_marginBottom="16dp"
+		android:elevation="4dp"
+		app:cardCornerRadius="30dp">
+
+		<EditText
+			android:id="@+id/identifier"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:hint="Email"
+			android:inputType="textEmailAddress"
+			android:padding="16dp"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+	</androidx.cardview.widget.CardView>
+
+	<!-- Password Input Card -->
+	<androidx.cardview.widget.CardView
+		android:id="@+id/passwordCard"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="24dp"
+		android:elevation="4dp"
+		app:cardCornerRadius="30dp">
+
+		<EditText
+			android:id="@+id/password"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:drawableEnd="@drawable/eye_off_outline"
+			android:drawablePadding="10dp"
+			android:hint="Password"
+			android:inputType="textPassword"
+			android:padding="16dp"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+	</androidx.cardview.widget.CardView>
+
+	<!-- Login Button -->
+	<Button
+		android:id="@+id/login"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		android:background="@drawable/allbackgroundbuttons"
+		android:backgroundTint="@color/lightblue"
+		android:elevation="4dp"
+		android:paddingVertical="12dp"
+		android:text="Sign In"
+		android:textColor="@color/black"
+		android:textSize="16sp" />
+
+	<!-- ProgressBar -->
+	<ProgressBar
+		android:id="@+id/progressBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_margin="20dp"
+		android:visibility="gone" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="20dp"
+		android:orientation="horizontal"
+		android:weightSum="1">
+
+		<TextView
+			android:id="@+id/forgotpassword"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5"
+			android:fontFamily="sans-serif-medium"
+			android:padding="5dp"
+			android:text="Forgot password"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+
+		<TextView
+			android:id="@+id/register"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5"
+			android:fontFamily="sans-serif-medium"
+			android:gravity="end"
+			android:padding="5dp"
+			android:text="Register"
+			android:textColor="@color/black"
+			android:textSize="16sp" />
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/loginwithgoogle"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_marginHorizontal="30dp"
+		android:layout_marginTop="25dp"
+		android:layout_marginBottom="10dp"
+		android:background="@drawable/allbackgroundbuttons"
+		android:backgroundTint="@color/white"
+		android:drawableStart="@drawable/googlee"
+		android:drawablePadding="10dp"
+		android:gravity="center_vertical"
+		android:paddingStart="15dp"
+		android:text="SIGN IN WITH GOOGLE"
+		android:textAllCaps="false"
+		android:textColor="@color/black"
+		android:textSize="16sp" />
+</LinearLayout>

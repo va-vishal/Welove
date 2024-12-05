@@ -1,0 +1,15 @@
+<resources>
+
+	<!-- Custom shape appearance with rounded corners -->
+	<style name="CustomShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+		<item name="cornerFamily">rounded</item>
+		<item name="cornerSize">16dp</item>
+	</style>
+
+
+		<style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+			<item name="android:textStyle">bold</item>
+			<item name="android:textSize">18sp</item> <!-- Optional: Adjust text size if needed -->
+		</style>
+
+</resources>

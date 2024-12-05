@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Profile.PreferenceActivity">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="@android:color/transparent"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:navigationIcon="@drawable/ic_back"
+			app:title="Preferences"
+			app:titleTextColor="@color/black"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			app:titleTextAppearance="@style/ToolbarTitleStyle" />
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="05dp"
+			android:layout_marginEnd="05dp"
+			android:orientation="vertical"
+			android:padding="10dp">
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="05dp"
+				android:layout_marginTop="08dp"
+				android:layout_marginEnd="05dp"
+				android:layout_marginBottom="10dp"
+				app:cardCornerRadius="8dp"
+				app:cardElevation="4dp"
+				android:visibility="gone">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:padding="10dp">
+
+					<TextView
+						android:id="@+id/distancetext"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="Maximum distance:0km"
+						android:textAlignment="center"
+						android:textColor="@color/black"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<SeekBar
+						android:id="@+id/distanceseek"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_gravity="center"
+						android:thumb="@drawable/ic_circle" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<ProgressBar
+				android:id="@+id/progressBar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:visibility="gone" />
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="15dp"
+				android:layout_marginEnd="5dp"
+				android:layout_marginBottom="10dp"
+				app:cardCornerRadius="8dp"
+				app:cardElevation="4dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@color/deep_blue"
+					android:padding="10dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="Your Current Location"
+						android:textColor="@color/black"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:paddingTop="15dp"
+						android:paddingBottom="15dp">
+
+						<TextView
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:layout_marginStart="10dp"
+							android:layout_weight="1"
+							android:text="Update  Location"
+							android:textColor="@color/black"
+							android:textSize="18sp"
+							android:textStyle="bold" />
+
+						<Button
+							android:id="@+id/update"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:layout_marginStart="10dp"
+							android:layout_marginEnd="5dp"
+							android:background="@drawable/update_button"
+							android:text="Update"
+							android:textColor="@color/black"
+							android:textStyle="bold" />
+					</LinearLayout>
+
+
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="05dp"
+				android:layout_marginTop="08dp"
+				android:layout_marginEnd="05dp"
+				android:layout_marginBottom="10dp"
+				app:cardCornerRadius="8dp"
+				app:cardElevation="4dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@color/deep_blue"
+					android:padding="10dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="Hide your Location"
+						android:textColor="@color/black"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<Switch
+						android:id="@+id/hidelocation"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_gravity="center"
+						android:text="Hide your location"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:thumb="@drawable/ic_circle" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="05dp"
+				android:layout_marginTop="08dp"
+				android:layout_marginEnd="05dp"
+				android:layout_marginBottom="10dp"
+				app:cardCornerRadius="8dp"
+				app:cardElevation="4dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@color/deep_blue"
+					android:padding="10dp">
+
+					<TextView
+						android:id="@+id/agetext"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="Age  18yrs : 60yrs"
+						android:textColor="@color/black"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<SeekBar
+						android:id="@+id/ageSeekbar"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_gravity="center"
+						android:thumb="@drawable/ic_circle" />
+
+
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="05dp"
+				android:layout_marginTop="08dp"
+				android:layout_marginEnd="05dp"
+				android:layout_marginBottom="10dp"
+				app:cardCornerRadius="8dp"
+				app:cardElevation="4dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@color/deep_blue"
+					android:padding="10dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="Hide your Age"
+						android:textColor="@color/black"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<Switch
+						android:id="@+id/hideAge"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_gravity="center"
+						android:text="Your Age is Visible now"
+						android:thumb="@drawable/ic_circle" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="05dp"
+				android:layout_marginTop="08dp"
+				android:layout_marginEnd="05dp"
+				android:layout_marginBottom="10dp"
+				app:cardCornerRadius="8dp"
+				app:cardElevation="4dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@color/deep_blue"
+					android:padding="10dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="Hide your Name"
+						android:textColor="@color/black"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<Switch
+						android:id="@+id/hidename"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_gravity="center"
+						android:text="Hide your name"
+						android:thumb="@drawable/ic_circle" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="05dp"
+				android:layout_marginTop="08dp"
+				android:layout_marginEnd="05dp"
+				android:layout_marginBottom="10dp"
+				app:cardCornerRadius="8dp"
+				app:cardElevation="4dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/deep_blue"
+					android:orientation="vertical"
+					android:padding="10dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="Hide Profile:"
+						android:textColor="@color/black"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+
+					<Switch
+						android:id="@+id/hideprofile"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_gravity="center"
+						android:text="Your Profile is Visible now"
+						android:thumb="@drawable/ic_circle" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/hotlayout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="05dp"
+				android:layout_marginTop="08dp"
+				android:layout_marginEnd="05dp"
+				android:layout_marginBottom="10dp"
+				app:cardCornerRadius="8dp"
+				app:cardElevation="4dp">
+
+				<LinearLayout
+					android:background="@color/deep_red"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:padding="10dp">
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_gravity="center_horizontal"
+						android:padding="05dp">
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="Hot Profiles:"
+						android:textColor="@color/white"
+						android:textSize="18sp"
+						android:textStyle="bold" />
+						<ImageView
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+							android:src="@drawable/hot" />
+					</LinearLayout>
+					<Switch
+						android:id="@+id/hotOrNarmalProfile"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_gravity="center"
+						android:textColor="@color/white"
+						android:textStyle="bold"
+						android:text="Only View Hot Profiles"
+						android:thumb="@drawable/hott" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="80dp"
+				android:padding="8dp"
+				app:cardCornerRadius="30dp"
+				app:cardElevation="4dp">
+
+				<Button
+					android:id="@+id/viewprofile"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="0dp"
+					android:background="@drawable/allbackgroundbuttons"
+					android:padding="15dp"
+					android:text="View Profile"
+					android:textColor="@color/black"
+					android:textSize="14sp"
+					android:textStyle="bold" />
+
+			</androidx.cardview.widget.CardView>
+
+		</LinearLayout>
+
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

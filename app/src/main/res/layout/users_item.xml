@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	app:cardCornerRadius="0dp"
+	app:cardElevation="10dp"
+	android:layout_marginHorizontal="02dp"
+	android:layout_marginBottom="02dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:padding="5dp"
+	android:layout_marginBottom="02dp">
+
+		<de.hdodenhof.circleimageview.CircleImageView
+			android:id="@+id/profile_image"
+			android:layout_width="49dp"
+			android:layout_height="49dp"
+			android:background="@drawable/circle_border"
+			android:src="@drawable/defaultimage"
+			app:civ_border_color="@color/white"
+			app:civ_border_width="2dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<View
+			android:id="@+id/img_off"
+			android:layout_width="49dp"
+			android:layout_height="49dp"
+			android:background="@drawable/circle_border"
+			android:visibility="visible"
+			app:layout_constraintBottom_toBottomOf="@id/profile_image"
+			app:layout_constraintEnd_toEndOf="@id/profile_image"
+			app:layout_constraintStart_toStartOf="@id/profile_image"
+			app:layout_constraintTop_toTopOf="@id/profile_image" />
+
+		<View
+			android:id="@+id/img_on"
+			android:layout_width="49dp"
+			android:layout_height="49dp"
+			android:background="@drawable/circle_border1"
+			android:visibility="gone"
+			app:layout_constraintStart_toStartOf="@id/profile_image"
+			app:layout_constraintTop_toTopOf="@id/profile_image"
+			app:layout_constraintBottom_toBottomOf="@id/profile_image" />
+
+		<TextView
+			android:id="@+id/username"
+			android:layout_width="0dp"
+			android:layout_height="28dp"
+			android:text="username"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:layout_constraintStart_toEndOf="@id/profile_image"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintEnd_toStartOf="@id/msgDAteAndTime"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp" />
+
+		<TextView
+			android:id="@+id/last_msg"
+			android:layout_width="0dp"
+			android:layout_height="18dp"
+			android:text="hello"
+			android:textColor="#000000"
+			android:textSize="14sp"
+			app:layout_constraintStart_toStartOf="@id/username"
+			app:layout_constraintTop_toBottomOf="@id/username"
+			app:layout_constraintEnd_toStartOf="@id/msgDAteAndTime"
+			android:layout_marginTop="4dp" />
+
+		<LinearLayout
+			android:id="@+id/msgDAteAndTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintEnd_toStartOf="@id/unseenMessages"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			android:layout_marginEnd="10dp">
+
+			<TextView
+				android:id="@+id/Date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Date"
+				android:textColor="#000000"
+				android:textSize="14sp" />
+
+			<TextView
+				android:id="@+id/time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Time"
+				android:textColor="#000000"
+				android:textSize="14sp"
+				android:layout_marginTop="8dp" />
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/unseenMessages"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:gravity="center"
+			android:text="1"
+			android:textColor="@color/black"
+			android:textStyle="bold"
+			android:textSize="10sp"
+			android:background="@drawable/allbackgroundbuttons"
+			android:visibility="visible"
+			android:backgroundTint="#A1D752"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			android:layout_marginEnd="20dp" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

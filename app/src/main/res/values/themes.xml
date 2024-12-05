@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+		<style name="Base.Theme.WeLove" parent="Theme.Design.Light.NoActionBar">
+	</style>
+	<style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+		<!-- Customize your theme here -->
+		<item name="colorPrimary">@color/primary</item>
+		<item name="colorPrimaryDark">@color/primaryDark</item>
+		<item name="colorAccent">@color/accent</item>
+		<!-- Ensure you add the required attributes -->
+		<item name="colorSurface">@color/surface</item>
+		<item name="colorOnBackground">@color/onBackground</item>
+	</style>
+	<style name="Theme.ZegoPrebuiltCallOffline" parent="Base.Theme.WeLove">
+		<item name="colorPrimary">@color/purple_500</item>
+		<item name="android:statusBarColor">@color/statusBarColorLight</item>
+		<item name="colorPrimaryVariant">@color/purple_700</item>
+		<item name="colorOnPrimary">@color/white</item>
+		<item name="colorSecondary">@color/teal_200</item>
+		<item name="colorSecondaryVariant">@color/teal_700</item>
+		<item name="colorOnSecondary">@color/black</item>
+		<item name="android:navigationBarColor">@color/white</item>
+		<item name="colorOnBackground">@color/black</item>
+		<item name="badgeStyle">@style/BadgeStyle</item><!-- Add this line -->
+	</style>
+	<style name="BadgeStyle" parent="Widget.MaterialComponents.Badge">
+		<item name="backgroundColor">@color/new_color</item>
+		<item name="badgeTextColor">@color/white</item>
+		<item name="badgeTextAppearance">@style/BadgeTextAppearance</item>
+	</style>
+	<style name="BadgeTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">12sp</item> <!-- Define text size -->
+	</style>
+</resources>

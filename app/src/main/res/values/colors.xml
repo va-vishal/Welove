@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="primaryColor">#E6D43F</color>
+	<color name="borderColor">#F4DA02</color>
+	<color name="selected_color">#8A7C0B</color>
+	<color name="button_pressed">#BFB23B</color>
+	<color name="button_default">#FFE301</color>
+	<color name="your_checkbox_color">#1FE927</color>
+	<color name="your_text_color">#0000FF</color>
+	<color name="purple_500">#6200EE</color>
+	<color name="purple_700">#3700B3</color>
+	<color name="teal_200">#03DAC5</color>
+	<color name="teal_700">#018786</color>
+	<color name="new_color">#659D13</color>
+	<color name="statusBarColorLight">#DADBDD</color>
+	<color name="button_background_unselected">#E0E0E0
+	</color> <!-- Light gray for unselected state -->
+	<color name="button_background_selected">#DCE9CC</color>
+	<color name="tab_text_selected">#3C643D</color>
+	<color name="tab_text_unselected">#000000</color>
+
+	<color name="primaryDark">#3700B3</color>
+	<color name="accent">#03DAC5</color>
+	<color name="surface">#FFFFFF</color>
+	<color name="onSurface">#FFFFFF</color><!-- Define colorSurface -->
+	<color name="onBackground">#000000</color> <!-- Define colorOnBackground -->
+	<color name="lightblue">#B1E4F6</color>
+	<color name="lightgreen">#F4749F</color>
+	<color name="gnt_red">#FF0000</color>
+	<color name="pp">#51C1F8</color>
+	<color name="p">#EBA0FF</color>
+	<color name="hot">#F23F3F</color>
+
+	<color name="dark_gold">#D1A04B</color> <!-- Dark Gold -->
+	<color name="deep_red">#EB6477</color> <!-- Deep Red -->
+	<color name="deep_blue">#F2D75E</color> <!-- Deep Blue -->
+	<color name="primary">#0088FF</color>
+
+	<color name="primary_night">#BB86FC</color>
+	<color name="primaryDark_night">#3700B3</color>
+	<color name="accent_night">#03DAC6</color>
+	<color name="surface_night">#121212</color>
+	<color name="onBackground_night">#FFFFFF</color>
+	<color name="purple_500_night">#BB86FC</color>
+	<color name="purple_700_night">#3700B3</color>
+	<color name="teal_200_night">#03DAC6</color>
+	<color name="teal_700_night">#018786</color>
+	<color name="statusBarColorNight">#000000</color>
+	<color name="new_color_night">#333333</color> <!-- Dark color for badges -->
+</resources>

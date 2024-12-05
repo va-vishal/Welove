@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/card_image"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="02dp"
+		android:layout_marginBottom="15dp"
+		android:layout_marginStart="04dp"
+		android:layout_marginEnd="10dp"
+		android:padding="12dp"
+		android:visibility="visible"
+		app:cardBackgroundColor="@android:color/white"
+		app:cardCornerRadius="12dp"
+		app:cardElevation="2dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:ignore="MissingConstraints">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:orientation="vertical">
+
+			<com.makeramen.roundedimageview.RoundedImageView
+				android:id="@+id/image_added"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:padding="4dp"
+				android:src="@drawable/defaultimage"
+				app:riv_corner_radius="12dp"
+				app:shapeAppearanceOverlay="@style/CustomShapeAppearance" />
+
+			<TextView
+				android:id="@+id/timestamp_image"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom|start"
+				android:layout_marginStart="8dp"
+				android:layout_marginEnd="8dp"
+				android:layout_marginBottom="8dp"
+				android:text="12:45 pm"
+				android:textColor="#757575"
+				android:textSize="12sp"
+				android:textStyle="normal" />
+		</FrameLayout>
+	</androidx.cardview.widget.CardView>
+
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/card_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="02dp"
+		android:layout_marginBottom="15dp"
+		android:layout_marginStart="04dp"
+		android:layout_marginEnd="10dp"
+		android:padding="12dp"
+		android:visibility="visible"
+		app:cardBackgroundColor="@android:color/white"
+		app:cardCornerRadius="12dp"
+		app:cardElevation="2dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<TextView
+				android:id="@+id/show_message"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="4dp"
+				android:ellipsize="end"
+				android:maxWidth="200dp"
+				android:text="Hello, this is a sample message!"
+				android:textColor="@android:color/black"
+				android:textSize="18sp"
+				android:textStyle="normal" />
+
+			<TextView
+				android:id="@+id/timestamp_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="end|bottom"
+				android:layout_marginStart="2dp"
+				android:text="12:45 pm"
+				android:textColor="#B4ABAB"
+				android:textSize="10sp"
+				android:textStyle="normal" />
+		</LinearLayout>
+
+	</androidx.cardview.widget.CardView>
+
+	<TextView
+		android:id="@+id/txt_seen"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="2dp"
+		android:text="Seen"
+		android:textColor="#757575"
+		android:textSize="12sp"
+		android:textStyle="normal"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		 />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

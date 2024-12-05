@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Fragments.MatchedFragment">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recyclerViewMatched"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/appBarLayout"
+		android:layout_marginTop="08dp"
+		android:layout_marginBottom="01dp"
+		android:paddingStart="00dp"
+		android:paddingEnd="0dp"
+		android:paddingBottom="0dp"
+		android:visibility="gone"
+		app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+		app:spanCount="2"
+		tools:listitem="@layout/item_user" />
+
+	<ImageView
+		android:id="@+id/matchesimage"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_above="@+id/matchestext"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="25dp"
+		android:src="@mipmap/ic_launcher"
+		android:visibility="visible" />
+
+	<TextView
+		android:id="@+id/matchestext"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="280dp"
+		android:gravity="center"
+		android:text="No Connections found yet!"
+		android:textColor="@color/black"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		android:visibility="visible" />
+</RelativeLayout>

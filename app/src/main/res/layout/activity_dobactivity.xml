@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+
+	tools:context=".Authentication.DOBActivity">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:background="@drawable/background_gradient1">
+
+			<TextView
+				android:id="@+id/textViewTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentEnd="true"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="30dp"
+				android:layout_marginEnd="32dp"
+				android:text="Complete your profile "
+				android:textColor="@color/black"
+				android:textSize="15sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.062"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView"
+				android:layout_width="224dp"
+				android:layout_height="237dp"
+				android:layout_below="@+id/text1"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentEnd="true"
+				android:layout_marginStart="90dp"
+				android:layout_marginTop="27dp"
+				android:layout_marginEnd="97dp"
+				app:cardCornerRadius="10dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.498"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/text1"
+				app:layout_constraintVertical_bias="0.034">
+
+				<ImageView
+					android:id="@+id/plus"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_gravity="center"
+					android:src="@drawable/plus"
+					android:visibility="visible"
+					android:contentDescription="@string/add_icon_description" />
+
+				<ImageView
+					android:id="@+id/imageview"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:scaleType="centerCrop"
+					android:src="@drawable/defaultimage"
+					android:visibility="gone"
+					android:contentDescription="@string/default_image_description" />
+
+
+			</androidx.cardview.widget.CardView>
+			<TextView
+				android:id="@+id/textView2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="8dp"
+				android:text="• Upload your Original Photo"
+				android:textColor="@color/black"
+				android:textSize="16sp"
+				android:textStyle="italic"
+				tools:ignore="MissingConstraints"
+				tools:layout_editor_absoluteX="34dp" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_marginStart="18dp"
+				android:layout_marginTop="7dp"
+				android:text="• If Profile &amp; Account Details are Fake While Verifying we would Deactivbe your account."
+				android:textColor="@color/black"
+				android:textSize="14sp"
+				android:textStyle="italic"
+				tools:ignore="MissingConstraints"
+				tools:layout_editor_absoluteX="34dp" />
+
+			<TextView
+				android:layout_width="374dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_marginStart="21dp"
+				android:layout_marginTop="05dp"
+				android:text="• its completely safe for females.Downloading &amp; Screenshots and Restricted in this App"
+				android:textColor="@color/black"
+				android:textSize="14sp"
+				android:textStyle="italic"
+				app:layout_constraintTop_toBottomOf="@+id/cardView"
+				tools:ignore="MissingConstraints"
+				tools:layout_editor_absoluteX="34dp" />
+
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="32dp"
+				android:layout_marginBottom="16dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="6dp">
+
+				<EditText
+					android:id="@+id/name"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:clickable="true"
+					android:gravity="center_vertical|center_horizontal"
+					android:hint="Enter your Name"
+					android:paddingStart="12dp"
+					android:paddingEnd="12dp" />
+			</androidx.cardview.widget.CardView>
+
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cardView1"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="32dp"
+				android:layout_marginBottom="16dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="6dp">
+
+				<EditText
+					android:id="@+id/dobEditText"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="false"
+					android:gravity="center"
+					android:hint="Date of Birth"
+					android:paddingStart="12dp"
+					android:paddingEnd="12dp" />
+
+			</androidx.cardview.widget.CardView>
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<androidx.cardview.widget.CardView
+					android:id="@+id/cardView3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="32dp"
+					android:layout_marginTop="5dp"
+					android:layout_marginEnd="32dp"
+					android:layout_marginBottom="16dp"
+					app:cardCornerRadius="10dp"
+					app:cardElevation="6dp">
+					<TextView
+						android:id="@+id/age"
+						android:layout_width="100dp"
+						android:layout_height="50dp"
+						android:background="?android:attr/selectableItemBackground"
+						android:clickable="true"
+						android:focusable="false"
+						android:gravity="center"
+						android:text="Age :"
+						android:textColor="@color/black"
+						android:paddingStart="12dp"
+						android:paddingEnd="12dp" />
+				</androidx.cardview.widget.CardView>
+
+				<androidx.cardview.widget.CardView
+					android:id="@+id/cardView4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/cardView3"
+					android:layout_marginTop="5dp"
+					android:layout_marginStart="5dp"
+					android:layout_marginEnd="32dp"
+					android:layout_marginBottom="16dp"
+					app:cardCornerRadius="10dp"
+					app:cardElevation="6dp">
+					<Spinner
+						android:id="@+id/gender"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:background="?android:attr/selectableItemBackground"
+						android:clickable="true"
+						android:focusable="false"
+						android:gravity="center"
+						android:hint="Gender"
+						android:paddingStart="12dp"
+						android:paddingEnd="12dp" />
+					<ImageView
+						android:layout_width="35dp"
+						android:layout_height="35dp"
+						android:layout_marginEnd="10dp"
+						android:layout_gravity="end|center_vertical"
+						android:src="@drawable/downarrow"
+						android:contentDescription="@string/down_arrow_description" />
+
+				</androidx.cardview.widget.CardView>
+			</RelativeLayout>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cardView4"
+				android:layout_marginHorizontal="32dp"
+				android:layout_marginBottom="16dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="6dp">
+
+				<Spinner
+					android:id="@+id/educationlevel"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="false"
+					android:gravity="center"
+					android:hint="Education level"
+					android:paddingStart="12dp"
+					android:paddingEnd="12dp" />
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginEnd="10dp"
+					android:layout_gravity="end|center_vertical"
+					android:src="@drawable/downarrow"
+					android:contentDescription="@string/down_arrow_description" />
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cardView5"
+				android:layout_marginTop="5dp"
+				android:layout_marginHorizontal="32dp"
+				android:layout_marginBottom="16dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="6dp">
+
+				<Spinner
+					android:id="@+id/jobtype"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="false"
+					android:gravity="center"
+					android:hint="Job type"
+					android:paddingStart="12dp"
+					android:paddingEnd="12dp" />
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginEnd="10dp"
+					android:layout_gravity="end|center_vertical"
+					android:src="@drawable/downarrow"
+					android:contentDescription="@string/down_arrow_description" />
+
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cardView6"
+				android:layout_marginHorizontal="32dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="16dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="6dp">
+
+				<Spinner
+					android:id="@+id/motherToungue"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="false"
+					android:gravity="center"
+					android:hint="Mothertongue"
+					android:paddingStart="12dp"
+					android:paddingEnd="12dp" />
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginEnd="10dp"
+					android:layout_gravity="end|center_vertical"
+					android:src="@drawable/downarrow"
+					android:contentDescription="@string/down_arrow_description" />
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cardView7"
+				android:layout_marginHorizontal="32dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="16dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="6dp">
+
+				<Spinner
+					android:id="@+id/maritgal_status"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="false"
+					android:gravity="center"
+					android:paddingStart="12dp"
+					android:paddingEnd="12dp" />
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginEnd="10dp"
+					android:layout_gravity="end|center_vertical"
+					android:src="@drawable/downarrow"
+					android:contentDescription="@string/down_arrow_description" />
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/cardView8"
+				android:layout_marginHorizontal="32dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="16dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="6dp">
+
+				<Spinner
+					android:id="@+id/prefGender"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:clickable="true"
+					android:focusable="false"
+					android:gravity="center"
+					android:hint="Prefered Gender"
+					android:paddingStart="12dp"
+					android:paddingEnd="12dp" />
+
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginEnd="10dp"
+					android:layout_gravity="end|center_vertical"
+					android:src="@drawable/downarrow"
+					android:contentDescription="@string/down_arrow_description" />
+			</androidx.cardview.widget.CardView>
+			<ProgressBar
+				android:id="@+id/locationProgressbar"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:visibility="gone"
+				android:layout_marginVertical="05dp"/>
+
+				<Button
+					android:id="@+id/location"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:gravity="center"
+					android:textSize="16sp"
+					android:layout_marginTop="05dp"
+					android:layout_marginHorizontal="32dp"
+					android:background="@drawable/allbackgroundbuttons"
+					android:text="Allow Location "
+					android:textAllCaps="false"
+					android:paddingStart="12dp"
+					android:paddingEnd="12dp" />
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView11"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/location"
+				android:layout_marginHorizontal="32dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="16dp"
+				app:cardCornerRadius="10dp"
+				app:cardElevation="6dp">
+
+				<EditText
+					android:id="@+id/description"
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:background="@drawable/edittext_b"
+					android:clickable="true"
+					android:gravity="center_vertical|center_horizontal"
+					android:hint="Description:Tell us Somethig about you"
+					android:paddingStart="12dp"
+					android:paddingEnd="12dp" />
+			</androidx.cardview.widget.CardView>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="end"
+				android:layout_marginEnd="24dp"
+				android:layout_marginBottom="13dp"
+				android:orientation="vertical">
+				<Button
+					android:id="@+id/buttonNext"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="bottom"
+					android:background="@drawable/allbackgroundbuttons"
+					android:text="save profile"
+					android:layout_margin="05dp"
+					android:padding="15dp"
+					android:textAllCaps="false"
+					android:textColor="@android:color/black"
+					android:textSize="20sp"
+					android:textStyle="normal" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+
+
+
+</RelativeLayout>

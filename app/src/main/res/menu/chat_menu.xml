@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/block"
+		android:icon="@drawable/block"
+		android:title="Block"
+		android:background="?android:attr/windowBackground"
+		/>
+	<item
+		android:id="@+id/unblock"
+		android:title="Unblock"
+		android:visible="false" />
+
+	<item android:id="@+id/Report"
+		android:icon="@drawable/report"
+		android:title="Report"
+		android:background="?android:attr/windowBackground"
+		/>
+</menu>

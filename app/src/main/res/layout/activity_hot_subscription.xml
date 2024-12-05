@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Hot_Subscription_Activity">
+
+	<!-- AppBarLayout containing Toolbar and Profile Layout -->
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<!-- Toolbar with back icon and title -->
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="@android:color/transparent"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:navigationIcon="@drawable/ic_back"
+			app:title="WeLove"
+			app:titleTextColor="@color/black"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			app:titleTextAppearance="@style/ToolbarTitleStyle" />
+
+		<!-- Profile Layout with User Picture and Name -->
+		<LinearLayout
+			android:id="@+id/profilelayout"
+			android:layout_width="match_parent"
+			android:layout_height="72dp"
+			android:background="@color/white"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:paddingBottom="5dp">
+
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/userpic1"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:layout_marginStart="5dp"
+				android:src="@drawable/defaultimage"
+				app:civ_border_color="@color/lightblue"
+				app:civ_border_overlay="true"
+				app:civ_border_width="2.2dp" />
+
+			<TextView
+				android:id="@+id/username1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginEnd="5dp"
+				android:layout_weight="1"
+				android:text="Hello User, become a premium member and enjoy the benefits below."
+				android:textColor="@color/black"
+				android:textSize="14sp" />
+
+			<ImageView
+				android:id="@+id/infoo1"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginEnd="5dp"
+				android:src="@drawable/info"/>
+		</LinearLayout>
+
+		<!-- Marquee Text (Scrolling Text) -->
+		<TextView
+			android:id="@+id/marqueeTextView3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/white"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:padding="16dp"
+			android:scrollHorizontally="true"
+			android:singleLine="true"
+			android:text=""
+			android:textColor="@android:color/black"
+			android:textSize="18sp"
+			android:visibility="visible" />
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<!-- Subscription Plan Card -->
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginHorizontal="30dp"
+		android:layout_marginVertical="35dp"
+		android:background="@color/white"
+		app:cardCornerRadius="25dp"
+		app:cardElevation="8dp"
+		app:layout_constraintBottom_toTopOf="@+id/btn_sub1"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/deep_red"
+			android:orientation="vertical"
+			android:padding="16dp">
+
+			<!-- Plan Name and Premium Image -->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:orientation="horizontal"
+				android:padding="04dp">
+
+				<TextView
+					android:id="@+id/plan_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="HOT MONTH"
+					android:textColor="@color/white"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+
+				<ImageView
+					android:layout_width="45dp"
+					android:layout_height="45dp"
+					android:layout_marginStart="05sp"
+					android:src="@drawable/hot" />
+			</LinearLayout>
+
+			<!-- Plan Price -->
+
+			<!-- Features List -->
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:paddingBottom="8dp"
+				android:text="₹ 2999"
+				android:textColor="@color/white"
+				android:textSize="25sp"
+				android:textStyle="bold" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_marginHorizontal="02dp"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="• Access to Hot features"
+					android:textColor="@color/white"
+					android:textSize="18sp"
+					android:textStyle="normal" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="02dp"
+					android:textColor="@color/white"
+					android:text="• Unlimited Chats with Matched \n• Unmatched Users\n• Add Multiple Images\n• Get Visited Profiles\n• Get Liked Profiles\n• Verify Profile\n• Check Out All Hot Profiles"
+					android:textSize="18sp"
+					android:textStyle="normal" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="02dp"
+					android:text="• Video &amp; Voice Call Access\n• Private Meet &amp; In-Person Meeting \n• Interested Profiles"
+					android:textColor="@color/white"
+					android:textSize="18sp"
+					android:textStyle="normal" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="02dp"
+					android:paddingBottom="4dp"
+					android:text="• Priority support"
+					android:textColor="@color/white"
+					android:textSize="18sp"
+					android:textStyle="normal" />
+			</LinearLayout>
+
+		</LinearLayout>
+	</androidx.cardview.widget.CardView>
+
+	<!-- Subscribe Now Button -->
+	<Button
+		android:id="@+id/btn_sub1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp"
+		android:layout_marginHorizontal="15dp"
+		android:text="Subscribe Now"
+		android:textStyle="bold"
+		android:textSize="16sp"
+		android:backgroundTint="@color/primary"
+		android:background="@drawable/allbackgroundbuttons"
+		android:textColor="@color/white"
+		app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

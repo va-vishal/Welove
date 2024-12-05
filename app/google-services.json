@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "300257760945",
+    "firebase_url": "https://welove-20c9d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "welove-20c9d",
+    "storage_bucket": "welove-20c9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300257760945:android:58965678707b20d93e7490",
+        "android_client_info": {
+          "package_name": "in.Welove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300257760945-9o5rhojtmvas4k3at9lh9bod8mqg2r2m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.Welove",
+            "certificate_hash": "d80982448492f87457b5ca89e3c072efed8ec3df"
+          }
+        },
+        {
+          "client_id": "300257760945-efddqeiqmlub46a9tgujulh9n7n62jpr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.Welove",
+            "certificate_hash": "1f2efd8bd3f4533d14800a016871d3b222a41238"
+          }
+        },
+        {
+          "client_id": "300257760945-crslv38dckuefq4l15c4vdk1dgu7mu7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxGBvjQr0Bq3yMs4iUOykua4CS6dn1eE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300257760945-crslv38dckuefq4l15c4vdk1dgu7mu7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

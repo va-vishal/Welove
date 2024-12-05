@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/transparent"
+	android:orientation="vertical"
+	android:padding="16dp">
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="4dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="16dp">
+
+			<!-- Current User's Image Card -->
+			<androidx.cardview.widget.CardView
+				android:id="@+id/currentcard"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="50dp"
+				android:rotation="-10"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp">
+
+				<com.makeramen.roundedimageview.RoundedImageView
+					android:id="@+id/currentuserimage"
+					android:layout_width="150dp"
+					android:layout_height="183dp"
+					android:layout_margin="4dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/kajol"
+					app:riv_corner_radius="18dp" />
+			</androidx.cardview.widget.CardView>
+
+			<!-- Other User's Image Card -->
+
+			<!-- Match Text -->
+			<androidx.cardview.widget.CardView
+				android:id="@+id/othercard"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:layout_marginStart="120dp"
+				android:layout_marginTop="50dp"
+				android:layout_marginEnd="25dp"
+				android:rotation="10"
+				app:cardCornerRadius="18dp"
+				app:cardElevation="4dp">
+
+				<com.makeramen.roundedimageview.RoundedImageView
+					android:id="@+id/otheruserimage"
+					android:layout_width="150dp"
+					android:layout_height="183dp"
+					android:layout_margin="4dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/kajol"
+					app:riv_corner_radius="18dp" />
+			</androidx.cardview.widget.CardView>
+
+			<TextView
+				android:id="@+id/txt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/currentcard"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="37dp"
+				android:gravity="center"
+				android:text="found new Connection"
+				android:textColor="#EB3C78"
+				android:textSize="30sp"
+				android:textStyle="bold" />
+
+			<!-- Description Text -->
+			<TextView
+				android:id="@+id/textView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/txt"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="23dp"
+				android:gravity="center_horizontal"
+				android:text="You and otheruser have both liked each other."
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+
+			<!-- Start Chat Button -->
+			<Button
+				android:id="@+id/startchat"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/textView"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="14dp"
+				android:background="@drawable/rounded_background"
+				android:drawableLeft="@drawable/chat_outline"
+				android:drawablePadding="8dp"
+				android:padding="10dp"
+				android:text="Start Chat"
+				android:textColor="@color/white" />
+
+			<!-- Keep Searching Text -->
+			<TextView
+				android:id="@+id/keepsearching"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/startchat"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="21dp"
+				android:layout_marginBottom="50dp"
+				android:clickable="true"
+				android:padding="10dp"
+				android:text="Keep Searching"
+				android:textStyle="bold" />
+		</RelativeLayout>
+	</androidx.cardview.widget.CardView>
+</LinearLayout>

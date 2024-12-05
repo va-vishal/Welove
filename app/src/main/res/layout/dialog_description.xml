@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="16dp"
+	app:cardCornerRadius="24dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@android:color/transparent"
+		>
+
+		<!-- Title TextView -->
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Type Your Description"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:textColor="@color/black"
+			android:textSize="25sp"
+			android:background="@color/lightblue"
+			android:padding="8dp"/>
+
+		<!-- EditText for description -->
+		<EditText
+			android:id="@+id/editTextDescription"
+			android:layout_width="match_parent"
+			android:layout_marginStart="05dp"
+			android:layout_marginEnd="05dp"
+			android:layout_height="wrap_content"
+			android:hint="Enter your description"
+			android:inputType="textMultiLine"
+			android:minLines="4"
+			android:gravity="top"
+			android:scrollbars="vertical"
+			android:layout_marginTop="16dp"/>
+
+		<!-- Buttons for confirming or canceling -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_marginBottom="05dp"
+			android:layout_marginTop="16dp">
+
+			<Button
+				android:id="@+id/btnCancelDescription"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/allbackgroundbuttons"
+				android:text="   Cancel   "/>
+
+			<Button
+				android:id="@+id/btnOkDescription"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="    OK    "
+				android:layout_marginStart="05dp"
+				android:background="@drawable/allbackgroundbuttons"
+				android:layout_marginEnd="8dp"/>
+		</LinearLayout>
+	</LinearLayout>
+</androidx.cardview.widget.CardView>

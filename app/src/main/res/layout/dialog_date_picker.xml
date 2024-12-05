@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="16dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<NumberPicker
+			android:id="@+id/numberPickerDay"
+			android:layout_width="114dp"
+			android:layout_height="wrap_content" />
+
+		<NumberPicker
+			android:id="@+id/numberPickerMonth"
+			android:layout_width="119dp"
+			android:layout_height="wrap_content" />
+
+		<NumberPicker
+			android:id="@+id/numberPickerYear"
+			android:layout_width="132dp"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<Button
+		android:id="@+id/buttonSetDate"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/allbackgroundbuttons"
+		android:text="Set DOB" />
+</LinearLayout>

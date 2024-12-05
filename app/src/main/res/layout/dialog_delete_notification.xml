@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="16dp"
+	app:cardCornerRadius="25dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="16dp"
+		android:background="@color/lightblue">
+
+		<TextView
+			android:id="@+id/dialog_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Delete Notification"
+			android:textSize="18sp"
+			android:textColor="@color/gnt_red"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/dialog_message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Are you sure you want to delete this notification?"
+			android:textSize="16sp"
+			android:textColor="@color/black"
+			android:layout_marginTop="8dp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="16dp"
+			android:padding="05dp">
+
+			<Button
+				android:id="@+id/button_cancel"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="@drawable/allbackgroundbuttons"
+				android:text="Cancel"
+				android:layout_marginEnd="05dp"
+				android:layout_marginStart="05dp"
+				android:textColor="@color/gnt_red"
+				android:backgroundTint="#FFFFFF" />
+
+			<Button
+				android:id="@+id/button_delete"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginEnd="05dp"
+				android:layout_marginStart="05dp"
+				android:background="@drawable/rounded_button_background_selected"
+				android:text="Delete"
+				android:textColor="@color/white"
+				android:backgroundTint="@color/gnt_red" />
+		</LinearLayout>
+	</LinearLayout>
+</androidx.cardview.widget.CardView>

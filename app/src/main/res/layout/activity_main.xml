@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/background_gradient"
+	tools:context=".Authentication.MainActivity">
+
+	<!-- ScrollView to allow vertical scrolling -->
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:padding="16dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="50dp"
+				android:text="WeLove"
+				android:textColor="@color/black"
+				android:textSize="40sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginBottom="20dp"
+				android:text="Connect with people near you"
+				android:textColor="@color/black"
+				android:textSize="16sp" />
+
+			<!-- Login Button -->
+
+			<!-- Signup Section -->
+			<Button
+				android:id="@+id/loginbutton"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:layout_marginHorizontal="30dp"
+				android:layout_marginBottom="10dp"
+				android:background="@drawable/allbackgroundbuttons"
+				android:backgroundTint="@color/white"
+				android:drawableStart="@drawable/user"
+				android:gravity="center_vertical"
+				android:text="Already have an Account? Login"
+				android:paddingStart="15dp"
+				android:drawablePadding="10dp"
+				android:textAllCaps="false"
+				android:textColor="@color/black"
+				android:textSize="16sp" />
+
+
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginBottom="10dp"
+				android:text="SignUp With"
+				android:textColor="@color/black"
+				android:textSize="16sp"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/emailbutton"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:layout_marginHorizontal="30dp"
+				android:layout_marginBottom="10dp"
+				android:background="@drawable/allbackgroundbuttons"
+				android:backgroundTint="@color/white"
+				android:drawableStart="@drawable/gmail"
+				android:gravity="center_vertical"
+				android:text="Email/Password"
+				android:paddingStart="15dp"
+				android:drawablePadding="10dp"
+				android:textAllCaps="false"
+				android:textColor="@color/black"
+				android:textSize="16sp" />
+
+			<Button
+				android:id="@+id/googlebutton"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:layout_marginHorizontal="30dp"
+				android:background="@drawable/allbackgroundbuttons"
+				android:backgroundTint="@color/white"
+				android:drawableStart="@drawable/googlee"
+				android:gravity="center_vertical"
+				android:text="Google"
+				android:textAllCaps="false"
+				android:paddingStart="15dp"
+				android:drawablePadding="10dp"
+				android:textColor="@color/black"
+				android:textSize="16sp" />
+
+			<!-- Terms and Conditions Section -->
+			<LinearLayout
+				android:id="@+id/termsContainer"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<CheckBox
+					android:id="@+id/termsCheckbox"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:buttonTint="#556BE2" />
+
+				<TextView
+					android:id="@+id/agree"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="5dp"
+					android:text="I agree with"
+					android:textColor="@color/black"
+					android:textSize="14sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/termsText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="2dp"
+					android:text="Terms and Conditions"
+					android:textColor="#556BE2"
+					android:textSize="14sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginHorizontal="5dp"
+					android:text="|"
+					android:textColor="@color/black"
+					android:textSize="14sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/privacyText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="2dp"
+					android:text="Privacy Policy"
+					android:textColor="#556BE2"
+					android:textSize="14sp"
+					android:textStyle="bold" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

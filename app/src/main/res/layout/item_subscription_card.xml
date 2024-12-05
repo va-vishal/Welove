@@ -1,0 +1,104 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="300dp"
+	android:layout_height="match_parent"
+	android:layout_marginHorizontal="30dp"
+	android:layout_marginVertical="35dp"
+	app:cardCornerRadius="25dp"
+	app:cardElevation="8dp"
+	android:layout_gravity="center_horizontal"
+	android:background="@color/white">
+
+	<LinearLayout
+		android:id="@+id/itembackground"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="16dp"
+		android:background="#F6C0BF">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="center"
+		android:padding="04dp">
+
+		<TextView
+			android:id="@+id/plan_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Premium Plan"
+			android:layout_gravity="center_vertical"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="@color/black" />
+
+		<ImageView
+			android:id="@+id/premiumimage"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:src="@drawable/premium"/>
+	</LinearLayout>
+
+		<TextView
+			android:id="@+id/plan_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="₹999/month"
+			android:layout_gravity="center"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:textColor="@color/primary"
+			android:paddingBottom="8dp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_marginHorizontal="02dp"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/f1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="4dp"
+				android:layout_marginBottom="0dp"
+				android:textStyle="bold"
+				android:text="• Access to premium features"
+				android:textSize="18sp" />
+
+			<TextView
+				android:id="@+id/f2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="4dp"
+				android:layout_marginBottom="02dp"
+				android:text="• Unlimited usage"
+				android:textStyle="bold"
+				android:textSize="18sp" />
+
+			<TextView
+				android:id="@+id/f3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="4dp"
+				android:textStyle="bold"
+				android:layout_marginBottom="02dp"
+				android:text="• Priority support"
+				android:textSize="18sp" />
+
+			<TextView
+				android:id="@+id/f4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="02dp"
+				android:paddingBottom="4dp"
+				android:textStyle="bold"
+				android:text="• Additional Features support"
+				android:textSize="18sp" />
+		</LinearLayout>
+
+	</LinearLayout>
+</androidx.cardview.widget.CardView>

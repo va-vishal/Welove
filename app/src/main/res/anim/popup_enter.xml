@@ -1,0 +1,17 @@
+<!-- res/anim/popup_enter.xml -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	android:interpolator="@android:interpolator/accelerate_decelerate">
+
+	<scale
+		android:fromXScale="0.7"
+		android:toXScale="1.0"
+		android:fromYScale="0.7"
+		android:toYScale="1.0"
+		android:duration="100" />
+
+	<alpha
+		android:fromAlpha="0.0"
+		android:toAlpha="1.0"
+		android:duration="100" />
+
+</set>

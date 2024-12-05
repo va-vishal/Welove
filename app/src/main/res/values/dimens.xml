@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="drawable_width">30dp</dimen>
+	<dimen name="drawable_height">30dp</dimen>
+
+</resources>
